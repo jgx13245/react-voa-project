@@ -1,0 +1,29 @@
+mapStateToProps 和 mapStateToProps 返回的都是对象，
+易错点：1、在单独的页面写完reducer的时候,记得在本页面的index.js上到处 reducer
+       2.大致大顺序，在本页面写完静态布局，
+           （1） 在写axios  在component里面写  
+            componentDidMount() {
+            this.getListInfo();
+            }
+            getListInfo(){
+                axios.get('/api/listContent.json').then(this.props.handlgetListInfoSucc.bind(this))
+            }
+           （2）跳出component组件
+                const mapStateToProps=(state)=>({
+                 list:state.list.list 
+                })
+
+                const mapDispatchToProps=(dispatch)=>({
+                    handlgetListInfoSucc(response) {
+                        const {list} = response.data.data;
+                        console.log(list)
+                        dispatch(getAddListInfo(list))
+                    }
+                })
+                export default connect(mapStateToProps,mapDispatchToProps)(list)
+             记得引入import {connect} from 'react-redux'
+             （3）写actionCreator,actionTypes,自己的red
+             （4）一定要在自己的index.js里面把自己导出去，
+             （5）最外层app里面的reducer.js要引入这个的reducer.js
+
+疑问：reducer里面两种返回数据的方法

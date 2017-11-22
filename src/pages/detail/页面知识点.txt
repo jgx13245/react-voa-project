@@ -1,0 +1,11 @@
+一、这个页面时点击首页时候的详情页，同时没有使用store等等数据库，只使用了axios AJAX调取数据，同时在
+this.setState({
+    xxx:xxx
+})
+进行修改
+二、掌握知识点
+ axios.get('/api/detail.json?id='+id).then(this.handleGetGedailInfo)
+ 这是设置不同的接口id;
+ 在fiddler里面设置/api/detail.json?id=2  这样的接口，一个一个的写detail.
+三、结构赋值，看清楚
+

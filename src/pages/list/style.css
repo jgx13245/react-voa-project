@@ -1,0 +1,151 @@
+
+.title-logo{
+    height:133px;
+}
+.right-pic{
+    margin-left:40px;
+}
+.title-info{
+    height:45px;
+    border:1px solid #000000;
+    background: #f4f4f4;
+    border:1px solid gray;
+}
+.title-item{
+    width:146px;
+    color:#ec0012;
+    float: left;
+    line-height: 45px;
+    font-size: 20px;
+    text-align: center;
+    height:45px;
+    border:1px solid gray;
+    border-top:none;
+    border-bottom: none;
+    
+}
+.title-item:nth-of-type(1){
+    margin-left:100px;
+}
+.studio_content{
+    height:1190px;
+
+}
+.s-left{
+    position: relative;
+    margin: 30px 10px 10px 10px;
+    width: 660px;
+    float: left;
+    border: 3px solid #ec0012;
+    border-radius: 20px;
+}
+.s-right{
+    margin: 30px 10px 10px 0;
+    width: 300px;
+    float: right;
+    border: 3px solid #ec0012;
+    border-radius: 20px;
+}
+.sc_img1{
+    position: absolute;
+    left: 20px;
+    top: -20px;
+}
+.sc_cover{
+    margin: 55px 0 0 35px;
+}
+.studio_content_left{
+    font-size: 20px;
+    margin: 10px 30px 0 30px;
+    padding: 0 0 10px 0;
+    color: #333;
+    border-bottom: 1px dotted #ccc;
+}
+.studio_content_left_ul{
+    list-style-type: disc;
+    color: #cc0000;
+    margin: 5px 10px 10px 40px;
+}
+.studio_content_left_ul_li{
+    margin-top:8px;
+    font-size:14px;
+    color:blue;
+    line-height: 25px;
+}
+.studio_content_left_ul_li :hover{
+    text-decoration: underline;
+}
+.studio_content_right_p{
+    font-size: 16px;
+    margin: 10px;
+    color:green;
+}
+.sc_cover_mag{
+    margin-left:30px;
+}
+.studio_content_right_class{
+    
+}
+.foot{
+	clear: both;
+    margin-top: 4px;
+    height: 90px;
+    background: #f8f8f8;
+    border: 1px solid #aaa;
+}
+.foot .foot-p1{
+	line-height: 30px;
+    text-align: center;
+}
+.swperContent{
+    width:483px;
+    height:132px;
+    float: left;
+    overflow: hidden;
+    
+}
+.swperContentBrother{
+    float: left;
+}
+
+
+
+
+
+
+
+html, body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
